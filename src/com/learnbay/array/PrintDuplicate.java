@@ -9,17 +9,17 @@ public class PrintDuplicate {
 	
 	public static int findDuplicate(int[] arr) {
 	
-		int result=0;
+		int duplicate=0;
 		for(int i=0;i<arr.length;i++) {
 			for(int j=i+1;j<arr.length;j++) {
 				if(arr[i]==arr[j]) {
-			return result=arr[i];
+			return duplicate=arr[i];
 					
 				}
 			}
 			
 		}
-		return result;
+		return duplicate;
 	}
 	
 	
@@ -28,8 +28,8 @@ public class PrintDuplicate {
 		
 		 int[] array= {1,3,2,5,6,7,3};
 		
-		int result=findDuplicate(array);
-		System.out.println(result);
+		int dup=findDuplicate(array);
+		System.out.println(dup);
 			
 		}
 		
